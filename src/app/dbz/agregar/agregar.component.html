@@ -1,0 +1,20 @@
+<h2>AGREGAR PERSONAJE</h2>
+        <hr>
+
+        <!-- ng model()[] Puede emitir(evento input) y escuchar un evento [value] -->
+
+        <form (ngSubmit) = "agregar()" action="">
+
+          <input type="text"
+            placeholder="Nombre"
+            name="nombreDel"
+            [(ngModel)]= "nuevito.nombre">
+
+
+          <input type="text"
+            placeholder="Nivel de pelia"
+            name = "poderDel"
+            [(ngModel)]= "nuevito.poder">
+
+            <button type ="submit"> AGREGAR </button>
+        </form>
